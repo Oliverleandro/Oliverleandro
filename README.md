@@ -1,4 +1,4 @@
-# 👨‍💻 Laeandro Souza
+# 👨‍💻 Leandro Souza
 
 **`Desenvolvedor FullStack`**
 
