@@ -1,6 +1,6 @@
 # 👨‍💻 Leandro Souza
 
-**`Desenvolvedor FullStack`**
+**`Desenvolvedor de Software em formação`**
 
 Me me chamo Leandro Souza de Oliveira, tenho 20 anos e sou natural do Rio de Janeiro. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas no Centro Universitário Estácio de Sá. Sou apaixonado por tecnologia e sonho em u dia poder compartilhar o conhecimento com todos.
 
