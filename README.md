@@ -21,7 +21,6 @@ Me me chamo Leandro Souza de Oliveira, tenho 20 anos e sou natural do Rio de Jan
     </a>
 </p>
 <hr>
-### 🤖 Linguagens e Tecnologias
  <p>
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=java,html,css,angular,py,git,mysql," />
