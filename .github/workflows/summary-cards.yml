@@ -1,4 +1,4 @@
-name: Summary Cards - Tema Hacker
+name: Profile Summary Cards
 
 on:
   workflow_dispatch:
@@ -8,13 +8,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
 
-      - name: Generate Summary Cards (Hacker)
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: Oliverleandro
-          THEME: monokai
+
+      - name: Commit and Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "update profile summary cards" || echo "no changes"
+          git push
