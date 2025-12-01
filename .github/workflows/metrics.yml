@@ -1,0 +1,25 @@
+name: Generate GitHub Metrics
+
+on:
+  schedule:
+    - cron: "0 1 * * *"  # Atualiza todo dia 01:00
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Generate Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: Oliverleandro
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: America/Sao_Paulo
+          plugin_lines: yes
+          plugin_followup: yes
+          plugin_reactions: yes
